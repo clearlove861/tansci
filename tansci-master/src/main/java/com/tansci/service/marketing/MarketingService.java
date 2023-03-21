@@ -1,4 +1,8 @@
 package com.tansci.service.marketing;
 
-public interface MarketingService {
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.tansci.domain.marketing.dto.MarketingDto;
+
+
+public interface MarketingService extends IService<MarketingDto> {
 }
