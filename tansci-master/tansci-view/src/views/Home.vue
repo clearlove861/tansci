@@ -1,5 +1,15 @@
 <template>
 	<div class="home">
+    <el-card :shadow="shadow"  style="margin-top: 10px">
+      <div class="block-text-center" m="t-4">
+        <div class="demonstration" >欢迎使用TANSCI-CRM客户关系管理系统</div>
+        <el-carousel trigger="click" height="280px">
+          <el-carousel-item v-for="item in  carouselList" :key="item">
+            <el-image :src="item"  fit="fill"></el-image>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+    </el-card>
 		<el-card :shadow="shadow" style="margin-top: 10px">
 			<div class="home-header">
 				<div class="home-header-greetings">
@@ -19,17 +29,6 @@
 				</div>
 			</div>
 		</el-card>
-    <el-card :shadow="shadow" style="margin-top: 10px">
-      <div class="block-text-center" m="t-4">
-        <div class="demonstration" >欢迎使用TANSCI-CRM客户关系管理系统</div>
-        <el-carousel trigger="click" height="150px">
-          <el-carousel-item v-for="item in 4" :key="item">
-            <h3 class="small justify-center" text="2xl">{{ item }}</h3>
-          </el-carousel-item>
-        </el-carousel>
-      </div>
-    </el-card>
-
 		<div class="home-main">
 			<div class="home-main-card">
 				<el-card v-for="(card,index) in cards" :key="index" :shadow="shadow" :style="{marginTop:'6px', flex: 1, padding: '2rem 0', marginLeft: index==0?'0':'0.3rem'}">
@@ -69,20 +68,31 @@
 		shadow: 'always',
 		todoList: [],
 		cards: [],
+    carouselList: [],
 	})
 
 	const {
-		username,shadow,todoList,cards
+		username,shadow,todoList,cards,carouselList
 	} = toRefs(state)
 
 	onMounted(() => {
 		onTodoList();
 		onCards();
+    onCarouselList();
 		noColumnar();
 		noPie();
 	})
+const onCarouselList = ()=>{
+   state.carouselList = [
+     "../src/images/1.jpg",
+     "../src/images/1.jpg",
+     "../src/images/1.jpg",
+     "../src/images/1.jpg",
 
-	const onTodoList = () =>{
+   ]
+}
+
+  const onTodoList = () =>{
 		state.todoList = [
 			{name:'待办事项',total:100,untreated:28,icon:'Bell',color:'#f56c6c'},
 			{name:'待办事项',total:84,untreated:78,icon:'ChatDotSquare',color:'#0084ff'},
@@ -202,6 +212,7 @@
 </script>
 <style lang="scss" scoped>
 	.home {
+
 		.home-header{
 			display: flex;
 			justify-content: space-between;
