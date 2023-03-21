@@ -1,4 +1,4 @@
-package com.tansci.service.service;
+package com.tansci.service.customer;
 
-public interface ServiceProcessingService {
+public interface CustomerService {
 }

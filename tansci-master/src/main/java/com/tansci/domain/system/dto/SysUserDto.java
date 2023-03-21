@@ -17,7 +17,7 @@ import java.util.List;
  * @description：用户DTO
  * @author：tanyp
  * @dateTime：2021/6/19 22:28
- * @editNote：
+ * @editNote：DTO（Data Transfer Object）：数据传输对象，Service 或 Manager 向外传输的对象。
  */
 @Data
 @SuperBuilder

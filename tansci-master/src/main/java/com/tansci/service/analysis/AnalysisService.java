@@ -1,4 +1,5 @@
-package com.tansci.service.service;
 
-public interface ServiceProcessingService {
+package com.tansci.service.analysis;
+
+public interface AnalysisService {
 }

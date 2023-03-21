@@ -1,4 +1,4 @@
-package com.tansci.controller.analysis;
+package com.tansci.controller.marketing;
 
-public class AnalysisController {
+public class MarketingController {
 }

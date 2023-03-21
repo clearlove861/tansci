@@ -34,7 +34,7 @@
     --t9: #181818;
 
     /* 操作颜色 */
-    --delete: #f56c6c;
+    --delete: #ffffff;
     --edit: #0084ff;
     --add: #63ba4d;
     --query: #909399;

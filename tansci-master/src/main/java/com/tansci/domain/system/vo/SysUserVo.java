@@ -15,6 +15,7 @@ import java.time.LocalDateTime;
  * @Description： 用户
  * @Author： tanyp
  * @Date： 2021/10/22 16:33
+ * VO（View Object）：显示层对象，通常是 Web 向模板渲染引擎层传输的对象。
  **/
 @Data
 @AllArgsConstructor

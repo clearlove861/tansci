@@ -12,7 +12,7 @@
                 <template #column="scope">
                     <el-button @click="onEdit(scope)" type="text" style="color:var(--edit)">编辑</el-button>
                     <el-button @click="onRole(scope)" type="text" style="color:var(--role)">权限</el-button>
-                    <el-button @click="onDelete(scope)" type="text" style="color:var(--delete)">删除</el-button>
+                    <el-button @click="onDelete(scope)" type="danger" style="color:var(--delete)"><span style="color: #ffffff">删除</span></el-button>
                 </template>
             </Table>
             <el-dialog title="分配权限" v-model="roleVisible" width="30%" :show-close="false">

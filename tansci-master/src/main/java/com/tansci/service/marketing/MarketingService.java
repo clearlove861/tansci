@@ -1,4 +1,4 @@
-package com.tansci.service.service;
+package com.tansci.service.marketing;
 
-public interface ServiceProcessingService {
+public interface MarketingService {
 }

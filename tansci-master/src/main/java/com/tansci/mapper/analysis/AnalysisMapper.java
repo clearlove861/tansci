@@ -1,4 +1,4 @@
-package com.tansci.mapper.service;
+package com.tansci.mapper.analysis;
 
 
 /**
@@ -9,5 +9,5 @@ package com.tansci.mapper.service;
  * @dateTime：2021/6/19 22:01
  * @editNote：
  */
-public interface ServiceMapper {
+public interface AnalysisMapper {
 }
