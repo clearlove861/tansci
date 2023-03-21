@@ -1,4 +1,4 @@
-package com.tansci.domain.service.dto;
+package com.tansci.domain.marketing.dto;
 
-public class ServiceCreationDto {
+public class MarketingDto {
 }

@@ -1,4 +1,4 @@
-package com.tansci.domain.customer.dto;
+package com.tansci.domain.customer.vo;
 
-public class CustomerDto {
+public class Customer {
 }

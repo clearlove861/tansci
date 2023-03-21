@@ -1,4 +1,4 @@
-package com.tansci.domain.analysis.dto;
+package com.tansci.domain.analysis.vo;
 
-public class AnalysisDto {
+public class Analysis {
 }
